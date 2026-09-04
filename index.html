@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Kisan Saathi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            🌾 <span>Kisan Saathi</span>
+        </div>
+
+        <nav>
+            <a href="#" class="active">🏠 Dashboard</a>
+            <a href="#">🌱 My Crops</a>
+            <a href="#">💰 Expenses</a>
+            <a href="#">📊 Profit Calculator</a>
+            <a href="#">🌦️ Weather</a>
+            <a href="#">📈 Mandi Rates</a>
+            <a href="#">🤖 AI Assistant</a>
+            <a href="#">🔔 Reminders</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#">⚙️ Settings</a>
+            <a href="#">👨‍🌾 Profile</a>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Header -->
+        <header class="topbar">
+
+            <div>
+                <h1>Good Morning, Farmer 👨‍🌾</h1>
+                <p>Welcome back to Smart Kisan Saathi</p>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">MK</div>
+
+                <div>
+                    <strong>Farmer</strong>
+                    <small>India</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+
+            <!-- Dashboard Title -->
+            <div class="section-title">
+
+                <div>
+                    <h2>Farm Overview</h2>
+                    <p>Track your farming business at a glance.</p>
+                </div>
+
+                <button class="add-btn">
+                    + Add Crop
+                </button>
+
+            </div>
+
+
+            <!-- Statistics Cards -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon">🌱</div>
+
+                    <div>
+                        <p>Total Crops</p>
+                        <h3>4</h3>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">💸</div>
+
+                    <div>
+                        <p>Total Expenses</p>
+                        <h3>₹24,500</h3>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+
+                    <div>
+                        <p>Expected Income</p>
+                        <h3>₹68,000</h3>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+
+                    <div>
+                        <p>Expected Profit</p>
+                        <h3>₹43,500</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Main Dashboard Grid -->
+            <div class="content-grid">
+
+                <!-- Crops -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>My Crops</h3>
+                            <p>Your current crops</p>
+                        </div>
+
+                        <button>View All</button>
+
+                    </div>
+
+
+                    <div class="crop-item">
+
+                        <div class="crop-icon">🌾</div>
+
+                        <div class="crop-info">
+                            <h4>Wheat</h4>
+                            <p>2.5 Acres • Harvest in 45 days</p>
+                        </div>
+
+                        <span class="status growing">
+                            Growing
+                        </span>
+
+                    </div>
+
+
+                    <div class="crop-item">
+
+                        <div class="crop-icon">🌽</div>
+
+                        <div class="crop-info">
+                            <h4>Maize</h4>
+                            <p>1.5 Acres • Harvest in 30 days</p>
+                        </div>
+
+                        <span class="status growing">
+                            Growing
+                        </span>
+
+                    </div>
+
+
+                    <div class="crop-item">
+
+                        <div class="crop-icon">🥔</div>
+
+                        <div class="crop-info">
+                            <h4>Potato</h4>
+                            <p>1 Acre • Harvest in 15 days</p>
+                        </div>
+
+                        <span class="status ready">
+                            Ready Soon
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Weather -->
+                <div class="dashboard-card weather-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Today's Weather</h3>
+                            <p>Farming conditions</p>
+                        </div>
+
+                        <span>📍 India</span>
+
+                    </div>
+
+
+                    <div class="weather-main">
+
+                        <div class="weather-icon">
+                            ☀️
+                        </div>
+
+                        <div>
+                            <h2>28°C</h2>
+                            <p>Sunny</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="weather-details">
+
+                        <div>
+                            <span>💧</span>
+                            <p>Humidity</p>
+                            <strong>62%</strong>
+                        </div>
+
+                        <div>
+                            <span>💨</span>
+                            <p>Wind</p>
+                            <strong>12 km/h</strong>
+                        </div>
+
+                        <div>
+                            <span>🌧️</span>
+                            <p>Rain</p>
+                            <strong>10%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Actions -->
+            <div class="dashboard-card quick-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h3>Quick Actions</h3>
+                        <p>Manage your farm quickly</p>
+                    </div>
+
+                </div>
+
+
+                <div class="quick-actions">
+
+                    <button>
+                        🌱
+                        <span>Add Crop</span>
+                    </button>
+
+                    <button>
+                        💸
+                        <span>Add Expense</span>
+                    </button>
+
+                    <button>
+                        📊
+                        <span>Calculate Profit</span>
+                    </button>
+
+                    <button>
+                        🤖
+                        <span>Ask AI Assistant</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+            <!-- Expenses & Income -->
+            <section class="page-section" id="finance-section">
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>💰 Expenses & Income</h2>
+                        <p>Track your farm's money and calculate profit.</p>
+                    </div>
+
+                    <button class="add-btn" id="openFinanceForm">
+                        + Add Transaction
+                    </button>
+
+                </div>
+
+
+                <!-- Finance Form -->
+                <div class="crop-form" id="financeForm">
+
+                    <h3>Add Transaction</h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label>Transaction Type</label>
+
+                            <select id="transactionType">
+                                <option value="expense">
+                                    Expense
+                                </option>
+
+                                <option value="income">
+                                    Income
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Amount (₹)</label>
+
+                            <input
+                                type="number"
+                                id="transactionAmount"
+                                placeholder="e.g. 5000"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Category</label>
+
+                            <select id="transactionCategory">
+
+                                <option value="Seeds">
+                                    Seeds
+                                </option>
+
+                                <option value="Fertilizer">
+                                    Fertilizer
+                                </option>
+
+                                <option value="Pesticides">
+                                    Pesticides
+                                </option>
+
+                                <option value="Labour">
+                                    Labour
+                                </option>
+
+                                <option value="Irrigation">
+                                    Irrigation
+                                </option>
+
+                                <option value="Equipment">
+                                    Equipment
+                                </option>
+
+                                <option value="Crop Sale">
+                                    Crop Sale
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Date</label>
+
+                            <input
+                                type="date"
+                                id="transactionDate"
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-buttons">
+
+                        <button
+                            class="save-crop"
+                            id="saveTransaction"
+                        >
+                            Save Transaction
+                        </button>
+
+                        <button
+                            class="cancel-crop"
+                            id="cancelFinance"
+                        >
+                            Cancel
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Financial Summary -->
+                <div class="stats-grid finance-stats">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">💸</div>
+
+                        <div>
+                            <p>Total Expenses</p>
+                            <h3 id="totalExpense">₹0</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">💰</div>
+
+                        <div>
+                            <p>Total Income</p>
+                            <h3 id="totalIncome">₹0</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">📈</div>
+
+                        <div>
+                            <p>Net Profit</p>
+                            <h3 id="netProfit">₹0</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Transactions -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Recent Transactions</h3>
+                            <p>Your farming financial activity</p>
+                        </div>
+
+                    </div>
+
+
+                    <div id="transactionList">
+
+                        <p class="empty-message">
+                            No transactions yet.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- My Crops -->
+            <section class="page-section" id="crops-section">
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>🌾 My Crops</h2>
+                        <p>Manage your crops and farming activities.</p>
+                    </div>
+
+                    <button
+                        class="add-btn"
+                        id="openCropForm"
+                    >
+                        + Add New Crop
+                    </button>
+
+                </div>
+
+
+                <!-- Crop Form -->
+                <div class="crop-form" id="cropForm">
+
+                    <h3>Add New Crop</h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Crop Name</label>
+
+                            <input
+                                type="text"
+                                id="cropName"
+                                placeholder="e.g. Wheat"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Land Area (Acres)</label>
+
+                            <input
+                                type="number"
+                                id="cropArea"
+                                placeholder="e.g. 2.5"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Sowing Date</label>
+
+                            <input
+                                type="date"
+                                id="sowingDate"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Expected Harvest Date</label>
+
+                            <input
+                                type="date"
+                                id="harvestDate"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-buttons">
+
+                        <button
+                            class="save-crop"
+                            id="saveCrop"
+                        >
+                            Save Crop
+                        </button>
+
+                        <button
+                            class="cancel-crop"
+                            id="cancelCrop"
+                        >
+                            Cancel
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Crop Cards -->
+                <div
+                    class="crop-grid"
+                    id="cropGrid"
+                >
+
+                    <div class="crop-detail-card">
+
+                        <div class="big-crop-icon">
+                            🌾
+                        </div>
+
+                        <h3>Wheat</h3>
+
+                        <p>
+                            Land Area:
+                            <strong>2.5 Acres</strong>
+                        </p>
+
+                        <p>
+                            Sowing:
+                            <strong>15 July 2026</strong>
+                        </p>
+
+                        <p>
+                            Harvest:
+                            <strong>28 August 2026</strong>
+                        </p>
+
+                        <span class="crop-status">
+                            Growing
+                        </span>
+
+                        <div class="crop-actions">
+
+                            <button>
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Weather -->
+            <section
+                class="page-section"
+                id="weather-section"
+            >
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>🌦️ Weather & Farming Advice</h2>
+                        <p>
+                            Check weather conditions for better
+                            farming decisions.
+                        </p>
+                    </div>
+
+                    <button
+                        class="add-btn"
+                        id="refreshWeather"
+                    >
+                        🔄 Refresh
+                    </button>
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="weather-location-card">
+
+                    <div>
+                        <span class="location-label">
+                            📍 Your Location
+                        </span>
+
+                        <h3 id="weatherLocation">
+                            India
+                        </h3>
+                    </div>
+
+                    <span class="live-status">
+                        ● Live Weather
+                    </span>
+
+                </div>
+
+
+                <!-- Weather Main -->
+                <div class="weather-dashboard">
+
+                    <div class="weather-main-card">
+
+                        <div
+                            class="weather-big-icon"
+                            id="weatherIcon"
+                        >
+                            ☀️
+                        </div>
+
+                        <div class="weather-temperature">
+
+                            <h1 id="temperature">
+                                28°C
+                            </h1>
+
+                            <h3 id="weatherCondition">
+                                Sunny
+                            </h3>
+
+                            <p>
+                                Feels like
+                                <strong id="feelsLike">
+                                    29°C
+                                </strong>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Weather Details -->
+                    <div class="weather-details-grid">
+
+                        <div class="weather-info-card">
+                            <span>💧</span>
+                            <p>Humidity</p>
+
+                            <strong id="humidity">
+                                62%
+                            </strong>
+                        </div>
+
+
+                        <div class="weather-info-card">
+                            <span>💨</span>
+                            <p>Wind Speed</p>
+
+                            <strong id="windSpeed">
+                                12 km/h
+                            </strong>
+                        </div>
+
+
+                        <div class="weather-info-card">
+                            <span>🌧️</span>
+                            <p>Rain Chance</p>
+
+                            <strong id="rainChance">
+                                10%
+                            </strong>
+                        </div>
+
+
+                        <div class="weather-info-card">
+                            <span>🌡️</span>
+                            <p>UV Index</p>
+
+                            <strong id="uvIndex">
+                                5
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Farming Advice -->
+                <div class="farming-advice-card">
+
+                    <div class="advice-icon">
+                        🌱
+                    </div>
+
+                    <div>
+
+                        <h3>Today's Farming Advice</h3>
+
+                        <p id="farmingAdvice">
+                            Weather conditions are suitable for
+                            normal farming activities. Keep your
+                            crops hydrated and monitor soil moisture.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Forecast -->
+                <div class="dashboard-card forecast-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>5-Day Forecast</h3>
+                            <p>Plan your farming activities.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="forecast-grid"
+                        id="forecastGrid"
+                    >
+
+                        <div class="forecast-item">
+                            <strong>Today</strong>
+                            <span>☀️</span>
+                            <h4>28°C</h4>
+                            <small>Sunny</small>
+                        </div>
+
+
+                        <div class="forecast-item">
+                            <strong>Tomorrow</strong>
+                            <span>🌤️</span>
+                            <h4>29°C</h4>
+                            <small>Partly Cloudy</small>
+                        </div>
+
+
+                        <div class="forecast-item">
+                            <strong>Tuesday</strong>
+                            <span>🌧️</span>
+                            <h4>26°C</h4>
+                            <small>Rain</small>
+                        </div>
+
+
+                        <div class="forecast-item">
+                            <strong>Wednesday</strong>
+                            <span>🌦️</span>
+                            <h4>27°C</h4>
+                            <small>Light Rain</small>
+                        </div>
+
+
+                        <div class="forecast-item">
+                            <strong>Thursday</strong>
+                            <span>☀️</span>
+                            <h4>30°C</h4>
+                            <small>Sunny</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Mandi Rates -->
+            <section
+                class="page-section"
+                id="mandi-section"
+            >
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>📈 Mandi Rates</h2>
+                        <p>
+                            Compare crop prices and find the best market.
+                        </p>
+                    </div>
+
+                    <button
+                        class="add-btn"
+                        id="refreshMandi"
+                    >
+                        🔄 Refresh Rates
+                    </button>
+
+                </div>
+
+
+                <!-- Search -->
+                <div class="mandi-search-card">
+
+                    <div class="search-box">
+
+                        <span>🔍</span>
+
+                        <input
+                            type="text"
+                            id="mandiSearch"
+                            placeholder="Search crop, e.g. Wheat"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Mandi Table -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Today's Mandi Prices</h3>
+                            <p>
+                                Compare prices across markets.
+                            </p>
+                        </div>
+
+                        <span id="mandiUpdated">
+                            Updated Today
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table class="mandi-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Crop</th>
+                                    <th>Mandi</th>
+                                    <th>State</th>
+                                    <th>Min Price</th>
+                                    <th>Max Price</th>
+                                    <th>Average</th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="mandiTableBody">
+
+                                <tr>
+                                    <td>🌾 Wheat</td>
+                                    <td>Meerut</td>
+                                    <td>Uttar Pradesh</td>
+                                    <td>₹2,150</td>
+                                    <td>₹2,350</td>
+                                    <td>
+                                        <strong>₹2,250</strong>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>🌽 Maize</td>
+                                    <td>Muzaffarnagar</td>
+                                    <td>Uttar Pradesh</td>
+                                    <td>₹1,900</td>
+                                    <td>₹2,100</td>
+                                    <td>
+                                        <strong>₹2,000</strong>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>🥔 Potato</td>
+                                    <td>Agra</td>
+                                    <td>Uttar Pradesh</td>
+                                    <td>₹1,200</td>
+                                    <td>₹1,500</td>
+                                    <td>
+                                        <strong>₹1,350</strong>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>🌾 Rice</td>
+                                    <td>Karnal</td>
+                                    <td>Haryana</td>
+                                    <td>₹2,400</td>
+                                    <td>₹2,700</td>
+                                    <td>
+                                        <strong>₹2,550</strong>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Best Market -->
+                <div class="best-market-card">
+
+                    <div class="best-market-icon">
+                        ⭐
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Best Market Recommendation
+                        </h3>
+
+                        <p id="bestMarketText">
+                            Meerut Mandi currently offers
+                            a good price for Wheat at
+                            approximately ₹2,250/quintal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- AI Farming Assistant -->
+            <section
+                class="page-section"
+                id="ai-section"
+            >
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>🤖 AI Farming Assistant</h2>
+                        <p>
+                            Get simple farming guidance for your crops.
+                        </p>
+                    </div>
+
+                    <span class="ai-status">
+                        ● Assistant Ready
+                    </span>
+
+                </div>
+
+
+                <div class="ai-assistant-card">
+
+                    <!-- AI Header -->
+                    <div class="ai-header">
+
+                        <div class="ai-avatar">
+                            🤖
+                        </div>
+
+                        <div>
+                            <h3>Kisan AI Assistant</h3>
+                            <p>
+                                Ask your farming question in simple language.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chat Area -->
+                    <div
+                        class="chat-area"
+                        id="chatArea"
+                    >
+
+                        <div class="message ai-message">
+
+                            <div class="message-avatar">
+                                🤖
+                            </div>
+
+                            <div class="message-content">
+
+                                <p>
+                                    Namaste! 👨‍🌾🌾
+                                </p>
+
+                                <p>
+                                    Main Kisan AI Assistant hoon.
+                                    Aap crop, fertilizer, irrigation,
+                                    pests ya farming practices ke baare
+                                    me mujhse pooch sakte hain.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Suggested Questions -->
+                    <div class="suggested-questions">
+
+                        <button
+                            onclick="askSuggestedQuestion('Wheat me fertilizer kab dena chahiye?')"
+                        >
+                            🌾 Wheat fertilizer
+                        </button>
+
+                        <button
+                            onclick="askSuggestedQuestion('Crop me yellow leaves kyu ho rahi hain?')"
+                        >
+                            🍃 Yellow leaves
+                        </button>
+
+                        <button
+                            onclick="askSuggestedQuestion('Maize ki irrigation kaise kare?')"
+                        >
+                            💧 Irrigation
+                        </button>
+
+                        <button
+                            onclick="askSuggestedQuestion('Crop pests se kaise bachaye?')"
+                        >
+                            🐛 Pest control
+                        </button>
+
+                    </div>
+
+
+                    <!-- Chat Input -->
+                    <div class="chat-input-area">
+
+                        <input
+                            type="text"
+                            id="aiInput"
+                            placeholder="Ask your farming question..."
+                        >
+
+                        <button id="sendAI">
+                            ➤
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Farmer Profile -->
+            <section
+                class="page-section"
+                id="profile-section"
+            >
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>👨‍🌾 Farmer Profile</h2>
+                        <p>
+                            Manage your personal and farming information.
+                        </p>
+                    </div>
+
+
+                    <!-- Language Feature -->
+                    <div class="language-switcher">
+
+                        <button
+                            id="englishBtn"
+                            class="language-btn active"
+                        >
+                            English
+                        </button>
+
+                        <button
+                            id="hindiBtn"
+                            class="language-btn"
+                        >
+                            हिंदी
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-page-grid">
+
+                    <!-- Profile Card -->
+                    <div class="dashboard-card profile-card">
+
+                        <div
+                            class="profile-large-avatar"
+                            id="profileAvatar"
+                        >
+                            MK
+                        </div>
+
+                        <h3 id="profileDisplayName">
+                            Farmer
+                        </h3>
+
+                        <p id="profileLocation">
+                            India
+                        </p>
+
+                        <span class="profile-badge">
+                            👨‍🌾 Farmer
+                        </span>
+
+                    </div>
+
+
+                    <!-- Profile Form -->
+                    <div class="dashboard-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <h3>Personal Information</h3>
+                                <p>
+                                    Update your farming profile.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label>Full Name</label>
+
+                                <input
+                                    type="text"
+                                    id="farmerName"
+                                    placeholder="Enter your name"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Village</label>
+
+                                <input
+                                    type="text"
+                                    id="farmerVillage"
+                                    placeholder="Enter village"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>District</label>
+
+                                <input
+                                    type="text"
+                                    id="farmerDistrict"
+                                    placeholder="Enter district"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>State</label>
+
+                                <input
+                                    type="text"
+                                    id="farmerState"
+                                    placeholder="Enter state"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-buttons">
+
+                            <button
+                                class="save-crop"
+                                id="saveProfile"
+                            >
+                                Save Profile
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- Farming Reminders -->
+<section
+    class="page-section"
+    id="reminders-section"
+>
+
+    <div class="section-title">
+
+        <div>
+            <h2>🔔 Farming Reminders</h2>
+
+            <p>
+                Never miss an important farming activity.
+            </p>
+        </div>
+
+        <button
+            class="add-btn"
+            id="openReminderForm"
+        >
+            + Add Reminder
+        </button>
+
+    </div>
+
+
+    <!-- Reminder Form -->
+    <div
+        class="crop-form"
+        id="reminderForm"
+    >
+
+        <h3>Add Farming Reminder</h3>
+
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>Task</label>
+
+                <input
+                    type="text"
+                    id="reminderTask"
+                    placeholder="e.g. Apply fertilizer"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Crop</label>
+
+                <input
+                    type="text"
+                    id="reminderCrop"
+                    placeholder="e.g. Wheat"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Date</label>
+
+                <input
+                    type="date"
+                    id="reminderDate"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Time</label>
+
+                <input
+                    type="time"
+                    id="reminderTime"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="form-buttons">
+
+            <button
+                class="save-crop"
+                id="saveReminder"
+            >
+                Save Reminder
+            </button>
+
+
+            <button
+                class="cancel-crop"
+                id="cancelReminder"
+            >
+                Cancel
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Reminder Statistics -->
+    <div class="stats-grid reminder-stats">
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🔔
+            </div>
+
+            <div>
+
+                <p>Total Reminders</p>
+
+                <h3 id="totalReminders">
+                    0
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⏰
+            </div>
+
+            <div>
+
+                <p>Pending</p>
+
+                <h3 id="pendingReminders">
+                    0
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ✅
+            </div>
+
+            <div>
+
+                <p>Completed</p>
+
+                <h3 id="completedReminders">
+                    0
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Reminder List -->
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <div>
+
+                <h3>Your Farming Reminders</h3>
+
+                <p>
+                    Keep track of important farming tasks.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div id="reminderList">
+
+            <p class="empty-message">
+                No reminders yet.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Profit Calculator -->
+<section class="page-section" id="profit-section">
+
+    <div class="section-title">
+        <div>
+            <h2>📊 Profit Calculator</h2>
+            <p>Calculate your expected farming profit.</p>
+        </div>
+    </div>
+
+    <div class="dashboard-card profit-calculator-card">
+
+        <div class="card-header">
+            <div>
+                <h3>Farm Profit Calculator</h3>
+                <p>Enter your crop details and calculate profit.</p>
+            </div>
+        </div>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label for="profitCropName">
+                    Crop Name
+                </label>
+
+                <input
+                    type="text"
+                    id="profitCropName"
+                    placeholder="e.g. Wheat"
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="profitArea">
+                    Land Area (Acres)
+                </label>
+
+                <input
+                    type="number"
+                    id="profitArea"
+                    placeholder="e.g. 2.5"
+                    min="0"
+                    step="0.1"
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="production">
+                    Expected Production (Quintal)
+                </label>
+
+                <input
+                    type="number"
+                    id="production"
+                    placeholder="e.g. 40"
+                    min="0"
+                    step="0.1"
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="sellingPrice">
+                    Selling Price (₹/Quintal)
+                </label>
+
+                <input
+                    type="number"
+                    id="sellingPrice"
+                    placeholder="e.g. 2500"
+                    min="0"
+                    step="1"
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="totalCost">
+                    Total Expense (₹)
+                </label>
+
+                <input
+                    type="number"
+                    id="totalCost"
+                    placeholder="e.g. 25000"
+                    min="0"
+                    step="1"
+                >
+            </div>
+
+        </div>
+
+
+        <div class="form-buttons">
+
+            <button
+                type="button"
+                class="save-crop"
+                id="calculateProfit"
+            >
+                📊 Calculate Profit
+            </button>
+
+            <button
+                type="button"
+                class="cancel-crop"
+                id="clearProfit"
+            >
+                Clear
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Profit Result -->
+    <div
+        class="stats-grid profit-results"
+        id="profitResults"
+    >
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📦
+            </div>
+
+            <div>
+                <p>Expected Production</p>
+
+                <h3 id="resultProduction">
+                    0 Quintal
+                </h3>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                💰
+            </div>
+
+            <div>
+                <p>Expected Income</p>
+
+                <h3 id="resultIncome">
+                    ₹0
+                </h3>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                💸
+            </div>
+
+            <div>
+                <p>Total Expense</p>
+
+                <h3 id="resultExpense">
+                    ₹0
+                </h3>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📈
+            </div>
+
+            <div>
+                <p>Expected Profit</p>
+
+                <h3 id="resultProfit">
+                    ₹0
+                </h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Settings Section -->
+<section class="page-section" id="settings-section">
+
+    <div class="section-title">
+        <div>
+            <h2>⚙️ Settings</h2>
+            <p>Manage your Smart Kisan Saathi preferences.</p>
+        </div>
+    </div>
+
+    <!-- App Preferences -->
+    <div class="dashboard-card settings-card">
+
+        <div class="card-header">
+            <div>
+                <h3>App Preferences</h3>
+                <p>Customize how your app works.</p>
+            </div>
+        </div>
+
+        <div class="settings-list">
+
+            <!-- Language -->
+            <div class="setting-item">
+                <div class="setting-info">
+                    <div class="setting-icon">🌐</div>
+
+                    <div>
+                        <h4>Language</h4>
+                        <p>Choose your preferred language.</p>
+                    </div>
+                </div>
+
+                <select id="settingsLanguage">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी</option>
+                </select>
+            </div>
+
+
+            <!-- Notifications -->
+            <div class="setting-item">
+
+                <div class="setting-info">
+                    <div class="setting-icon">🔔</div>
+
+                    <div>
+                        <h4>Notifications</h4>
+                        <p>Receive farming reminders and alerts.</p>
+                    </div>
+                </div>
+
+                <label class="switch">
+                    <input
+                        type="checkbox"
+                        id="notificationToggle"
+                        checked
+                    >
+
+                    <span class="slider"></span>
+                </label>
+
+            </div>
+
+
+            <!-- Dark Mode -->
+            <div class="setting-item">
+
+                <div class="setting-info">
+                    <div class="setting-icon">🌙</div>
+
+                    <div>
+                        <h4>Dark Mode</h4>
+                        <p>Use dark appearance for the app.</p>
+                    </div>
+                </div>
+
+                <label class="switch">
+                    <input
+                        type="checkbox"
+                        id="darkModeToggle"
+                    >
+
+                    <span class="slider"></span>
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- About -->
+    <div class="dashboard-card settings-card">
+
+        <div class="card-header">
+            <div>
+                <h3>About Smart Kisan Saathi</h3>
+                <p>Your digital farming companion.</p>
+            </div>
+        </div>
+
+        <div class="about-settings">
+
+            <p>
+                🌾 Smart Kisan Saathi helps farmers
+                manage crops, expenses, profit and
+                farming activities in one place.
+            </p>
+
+            <small>
+                Version 1.0
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
