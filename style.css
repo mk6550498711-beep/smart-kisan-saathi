@@ -1,0 +1,1467 @@
+/* ==========================================
+   SMART KISAN SAATHI
+   COMPLETE STYLE
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2e7d32;
+    --primary-light: #e8f5e9;
+    --secondary: #66bb6a;
+    --dark: #1f2937;
+    --text: #4b5563;
+    --light: #f5f7f5;
+    --white: #ffffff;
+    --border: #e5e7eb;
+    --shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+
+/* ==========================================
+   SIDEBAR
+   ========================================== */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: var(--white);
+    border-right: 1px solid var(--border);
+    padding: 25px 18px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    padding: 0 10px 30px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 13px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+
+.main-content {
+    margin-left: 250px;
+    min-height: 100vh;
+    padding: 30px 35px;
+}
+
+
+/* ==========================================
+   TOPBAR
+   ========================================== */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.topbar h1 {
+    font-size: 26px;
+    margin-bottom: 7px;
+}
+
+.topbar p {
+    color: var(--text);
+    font-size: 14px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile strong {
+    display: block;
+    font-size: 14px;
+}
+
+.profile small {
+    color: #777;
+}
+
+.avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   SECTION TITLE
+   ========================================== */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    color: var(--text);
+    font-size: 13px;
+}
+
+.add-btn {
+    background: var(--primary);
+    border: none;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #1b5e20;
+    transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   STATISTICS
+   ========================================== */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.stat-card p {
+    color: var(--text);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.stat-card h3 {
+    font-size: 22px;
+}
+
+
+/* ==========================================
+   DASHBOARD GRID
+   ========================================== */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.dashboard-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: var(--shadow);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.card-header p {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.card-header button {
+    border: none;
+    background: transparent;
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   CROPS
+   ========================================== */
+
+.crop-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.crop-item:last-child {
+    border-bottom: none;
+}
+
+.crop-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.crop-info {
+    flex: 1;
+}
+
+.crop-info h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.crop-info p {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.status {
+    font-size: 11px;
+    padding: 6px 9px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.growing {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.ready {
+    background: #fff8e1;
+    color: #f57c00;
+}
+
+
+/* ==========================================
+   WEATHER
+   ========================================== */
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0 25px;
+}
+
+.weather-icon {
+    font-size: 55px;
+}
+
+.weather-main h2 {
+    font-size: 36px;
+}
+
+.weather-main p {
+    color: var(--text);
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.weather-details div {
+    background: var(--light);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.weather-details span {
+    font-size: 18px;
+}
+
+.weather-details p {
+    color: var(--text);
+    font-size: 11px;
+    margin: 5px 0;
+}
+
+.weather-details strong {
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   QUICK ACTIONS
+   ========================================== */
+
+.quick-card {
+    margin-bottom: 30px;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.quick-actions button {
+    border: 1px solid var(--border);
+    background: white;
+    padding: 18px 10px;
+    border-radius: 11px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.quick-actions button span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.quick-actions button:hover {
+    border-color: var(--secondary);
+    background: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   PAGE SECTIONS
+   ========================================== */
+
+.page-section {
+    margin-top: 30px;
+}
+
+
+/* ==========================================
+   FORMS
+   ========================================== */
+
+.crop-form {
+    display: none;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 25px;
+}
+
+.crop-form.show {
+    display: block;
+}
+
+.crop-form h3 {
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.save-crop,
+.cancel-crop {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.save-crop {
+    background: var(--primary);
+    color: white;
+}
+
+.cancel-crop {
+    background: #eeeeee;
+    color: #333;
+}
+
+
+/* ==========================================
+   MY CROPS
+   ========================================== */
+
+.crop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.crop-detail-card {
+    background: var(--white);
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+.big-crop-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.crop-detail-card h3 {
+    margin-bottom: 12px;
+}
+
+.crop-detail-card p {
+    font-size: 13px;
+    color: var(--text);
+    margin: 8px 0;
+}
+
+.crop-status {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: var(--primary-light);
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.crop-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.crop-actions button {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.crop-actions .delete-btn {
+    color: #d32f2f;
+}
+
+
+/* ==========================================
+   EXPENSES & INCOME
+   ========================================== */
+
+#transactionType,
+#transactionCategory {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+    outline: none;
+}
+
+#transactionType:focus,
+#transactionCategory:focus {
+    border-color: var(--primary);
+}
+
+.finance-stats {
+    margin-top: 20px;
+}
+
+#transactionList {
+    width: 100%;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.expense-icon {
+    background: #ffebee;
+}
+
+.income-icon {
+    background: var(--primary-light);
+}
+
+.transaction-info {
+    flex: 1;
+}
+
+.transaction-info h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.transaction-info p {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.transaction-amount {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.expense-amount {
+    color: #d32f2f;
+}
+
+.income-amount {
+    color: var(--primary);
+}
+
+.empty-message {
+    text-align: center;
+    color: var(--text);
+    padding: 25px;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   WEATHER SECTION
+   ========================================== */
+
+.weather-location-card {
+    background: var(--white);
+    padding: 20px 24px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.location-label {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.weather-location-card h3 {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.live-status {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.weather-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.weather-main-card {
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.weather-big-icon {
+    font-size: 75px;
+}
+
+.weather-temperature h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.weather-temperature h3 {
+    margin-bottom: 8px;
+}
+
+.weather-temperature p {
+    color: var(--text);
+    font-size: 13px;
+}
+
+.weather-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.weather-info-card {
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.weather-info-card span {
+    font-size: 25px;
+}
+
+.weather-info-card p {
+    color: var(--text);
+    font-size: 12px;
+    margin: 8px 0 5px;
+}
+
+.weather-info-card strong {
+    font-size: 18px;
+}
+
+.farming-advice-card {
+    background: var(--primary-light);
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.advice-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.farming-advice-card h3 {
+    margin-bottom: 6px;
+}
+
+.farming-advice-card p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.forecast-card {
+    margin-bottom: 30px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.forecast-item {
+    background: var(--light);
+    border-radius: 12px;
+    padding: 17px 10px;
+    text-align: center;
+}
+
+.forecast-item strong {
+    font-size: 12px;
+}
+
+.forecast-item span {
+    display: block;
+    font-size: 28px;
+    margin: 12px 0;
+}
+
+.forecast-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.forecast-item small {
+    color: var(--text);
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   MANDI RATES
+   ========================================== */
+
+.mandi-search-card {
+    background: var(--white);
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--light);
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+
+.search-box span {
+    font-size: 18px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.mandi-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+.mandi-table th {
+    background: var(--light);
+    padding: 13px;
+    text-align: left;
+    font-size: 12px;
+    color: var(--text);
+}
+
+.mandi-table td {
+    padding: 15px 13px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+}
+
+.mandi-table tr:last-child td {
+    border-bottom: none;
+}
+
+.mandi-table td strong {
+    color: var(--primary);
+}
+
+.best-market-card {
+    background: var(--primary-light);
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.best-market-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.best-market-card h3 {
+    margin-bottom: 6px;
+}
+
+.best-market-card p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   AI FARMING ASSISTANT
+   ========================================== */
+
+.ai-status {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ai-assistant-card {
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.ai-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.ai-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.ai-header h3 {
+    margin-bottom: 5px;
+}
+
+.ai-header p {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.chat-area {
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 22px;
+    background: #fafcfb;
+}
+
+.message {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+    max-width: 85%;
+}
+
+.message-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.message-content {
+    background: white;
+    padding: 12px 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.message-content p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.user-message {
+    margin-left: auto;
+    flex-direction: row-reverse;
+}
+
+.user-message .message-content {
+    background: var(--primary);
+    color: white;
+}
+
+.user-message .message-avatar {
+    background: var(--primary);
+    color: white;
+}
+
+.suggested-questions {
+    display: flex;
+    gap: 8px;
+    padding: 15px 20px;
+    overflow-x: auto;
+    border-top: 1px solid var(--border);
+}
+
+.suggested-questions button {
+    white-space: nowrap;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.suggested-questions button:hover {
+    background: var(--primary-light);
+    border-color: var(--secondary);
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+    padding: 18px 20px;
+    border-top: 1px solid var(--border);
+}
+
+.chat-input-area input {
+    flex: 1;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 13px 15px;
+    outline: none;
+    font-size: 13px;
+}
+
+.chat-input-area input:focus {
+    border-color: var(--primary);
+}
+
+.chat-input-area button {
+    width: 48px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chat-input-area button:hover {
+    background: #1b5e20;
+}
+
+
+/* ==========================================
+   FARMING REMINDERS
+   ========================================== */
+
+.reminder-stats {
+    margin-top: 20px;
+}
+
+.reminder-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.reminder-item:last-child {
+    border-bottom: none;
+}
+
+.reminder-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 11px;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+.reminder-info {
+    flex: 1;
+}
+
+.reminder-info h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.reminder-info p {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.reminder-time {
+    font-size: 12px;
+    color: var(--primary);
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.reminder-actions {
+    display: flex;
+    gap: 7px;
+}
+
+.reminder-actions button {
+    border: 1px solid var(--border);
+    background: white;
+    padding: 7px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.reminder-actions .complete-btn {
+    color: var(--primary);
+}
+
+.reminder-actions .delete-reminder {
+    color: #d32f2f;
+}
+
+.reminder-completed {
+    opacity: 0.55;
+}
+
+.reminder-completed h4 {
+    text-decoration: line-through;
+}
+
+
+/* ==========================================
+   FARMER PROFILE
+   ========================================== */
+
+.profile-page-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.profile-large-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.profile-card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.profile-card p {
+    color: var(--text);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.profile-badge {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   LANGUAGE FEATURE
+   ========================================== */
+
+.language-switcher {
+    display: flex;
+    gap: 4px;
+    background: var(--white);
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.language-btn {
+    border: none;
+    background: transparent;
+    color: var(--text);
+    padding: 8px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.language-btn:hover {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+.language-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1100px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .crop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .weather-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-page-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 210px;
+    }
+
+    .main-content {
+        margin-left: 210px;
+        padding: 25px;
+    }
+
+    .quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .crop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar-bottom {
+        margin-top: 15px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .weather-location-card {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .weather-main-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .weather-details-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .forecast-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .reminder-item {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .reminder-actions {
+        width: 100%;
+        margin-left: 60px;
+    }
+
+    .language-switcher {
+        width: 100%;
+    }
+
+    .language-btn {
+        flex: 1;
+    }
+}
+
+/* Accessibility: better focus outlines and reduced-motion support */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid rgba(46,125,50,0.18);
+    outline-offset: 2px;
+}
+
+button:focus {
+    box-shadow: 0 0 0 4px rgba(102,187,106,0.12);
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Print friendly tweaks */
+@media print {
+    .sidebar, .add-btn, .chat-area, .ai-assistant-card { display: none !important; }
+    .main-content { margin: 0; }
+}
+
+/* Slight contrast improvements for small text */
+.stat-card p, .section-title p {
+    color: #374151;
+}
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .main-content {
+    background: #121212;
+}
+
+body.dark-mode .topbar,
+body.dark-mode .dashboard-card,
+body.dark-mode .stat-card {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .dashboard-card p,
+body.dark-mode .stat-card p,
+body.dark-mode .section-title p {
+    color: #bdbdbd;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #2a2a2a;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode .card-header {
+    border-color: #333;
+}
